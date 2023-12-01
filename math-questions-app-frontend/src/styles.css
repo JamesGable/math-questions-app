@@ -1,0 +1,161 @@
+body.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+body.large-text {
+  zoom: 150%;
+}
+
+.app {
+  margin: 20px;
+}
+
+/* Add more styles as per your design */
+
+
+@media only screen and (max-width: 600px) {
+  .app {
+    margin: 10px;
+  }
+
+  body.large-text {
+    font-size: 1.25em; /* Slightly smaller for mobile */
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 18px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+:root {
+  --primary-color: #48607b; /* Primary color for your app */
+  --secondary-color: #f8f8f8; /* Secondary color */
+  --text-color: #333; /* Main text color */
+  --background-color: #fff; /* Background color */
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+body.dark-mode {
+  background-color: #282c34;
+  color: #f8f8f8;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  gap: 10px; /* Space between buttons */
+}
+
+button {
+  font-size: 18px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 10px 15px;
+  margin: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+body.dark-mode button:hover {
+  background-color: #dee2e2; /* Lighter shade for dark mode */
+  color: #333333; /* Darker color for text for contrast */
+}
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+h1 {
+  font-size: larger;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+button, input[type="checkbox"], input[type="radio"], input[type="text"] {
+  /* ... existing styles ... */
+
+  /* Focus style */
+  outline: none; /* Removes the default focus outline */
+}
+
+button:focus, input[type="checkbox"]:focus, input[type="radio"]:focus, input[type="text"]:focus {
+  outline: 2px dashed #333; /* Bright color for visibility */
+  outline-offset: 2px; /* Space between the element and the outline */
+}
+
+body.dark-mode button:focus, 
+body.dark-mode input[type="checkbox"]:focus, 
+body.dark-mode input[type="radio"]:focus, 
+body.dark-mode input[type="text"]:focus {
+  outline: 2px dashed #00ccff; /* Different color for dark mode */
+}
+
+input[type="submit" i] {
+  font-size: 18px;
+  background-color: #e6f9d3;
+  color: var(--primary-color);
+  padding: 10px 15px;
+  margin: 6px;
+  border-radius: 5px;
+  border: solid 1px #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  float: left
+}
+
+input[type="number" i] {
+  writing-mode: horizontal-tb !important;
+  padding-block: 1px;
+  padding-inline: 2px;
+  min-height: 20px;
+  max-width: 50px;
+}
+
+button:disabled,
+button[disabled]{
+  display: none;
+}
+
+select {
+  font-size: 18px;
+  overflow: visible !important;
+}
+
+.question-image {
+  max-width: 80px;
+  max-height: 80px;
+  border: 2px solid #333333;
+  border-radius: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
