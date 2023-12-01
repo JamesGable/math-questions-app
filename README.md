@@ -19,25 +19,17 @@ An interactive math app I developed using React and Go to help my niece practice
 
 Clone the repository to your local machine:
 
-bashCopy code
-
 `git clone https://github.com/your-username/math-questions-app.git` 
 
 Navigate to the app's directory:
-
-bashCopy code
 
 `cd math-questions-app` 
 
 Install the necessary dependencies:
 
-Copy code
-
 `npm install` 
 
 Run the app:
-
-sqlCopy code
 
 `npm start` 
 
@@ -45,13 +37,9 @@ sqlCopy code
 
 Navigate to the backend directory within the cloned repository:
 
-bashCopy code
-
 `cd path/to/backend` 
 
 Run the Go server:
-
-goCopy code
 
 `go run main.go` 
 
